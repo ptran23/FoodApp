@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(255, 255, 255); 
+    }
+   
+       .dashboard {
+           width: 350px;
+               margin: 0 auto;
+               font-family: Tahoma, Geneva, sans-serif;
+               border: 10px solid #056d68;
+               text-align: center;
+       }

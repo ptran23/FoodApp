@@ -1,0 +1,68 @@
+.login-form {
+    width: 350px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: 1px solid #647ff5;
+    }
+    .login-form h1 {
+    text-align: center;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    }
+    .login-form h2 {
+        color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left:5%;
+     margin-right:5%;
+    }
+
+    .login-form input[type="password"],
+    .login-form input[type="text"] {
+    width: 90%;
+    margin-left:5%;
+     margin-right:5%;
+    padding: 15px;
+    border: 3px solid #647ff5;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+.login-form input[type="submit"] {
+    width: 90%;
+    margin-left:5%;
+     margin-right:5%;
+    padding: 15px;
+    background-color: #647ff5;
+    border-color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a1212;
+}
+.login-form input[type="submit"]:hover {
+opacity: 0.8;
+}
+
+
+.new h1 {
+color: #918e8e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+}
+.new input[type="submit"]{
+    
+    width: 40%;
+    padding: 10px;
+    background-color: #d8d6d0;
+    margin-left:30%;
+     margin-right:30%;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a1212;
+    
+}

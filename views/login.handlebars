@@ -1,0 +1,21 @@
+{{#each errors}}
+<div>{{this}}</div>
+
+{{/each}}
+<link href= "css/login.css "  rel ="stylesheet">
+<div class="login-form">
+<h1>Sign-in</h1>
+<form action="/login" method="POST">
+				<input type="text" name="username" placeholder="Email" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit">
+</form>
+ <h2>By continuing, you agree to FoodShark's Conditions of Use and Privacy Notice.</h2>
+</div>
+
+<div class= "new">
+    <h1>New to FoodShark?</h1>
+    <form action="/registration" >
+        <input type = "submit" value= "Create Your FoodShark Account" />
+    </form>
+</div>
