@@ -92,18 +92,47 @@
     background: #ffffff;
     
   }
-
+  .chef {
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-gap:0.1em;
+  }
+  div.chef_description
+{
+  background-color:gray;
+  padding: 20px;
+}
+div.chef_photo
+{
+  background-color:orange;
+  padding: 20px;
+}
  /* CSS QUERY */
+ /*mobile */
  @media only screen and (max-width: 800px) {
  [class*="div"] 
   {
   width: 100%;
   }
+  .wrapper{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2;
+    grid-gap:0.1em;
+  }
 }
-
+/* Remvoes chef description / photo once it reaches phone size px */
+@media screen and (max-width: 800px) {
+  div.chef {
+    display: none;
+  }
+}
+/*Tablets to Desktop */
 @media only screen and (min-width: 801px) {
   [class*="div"] 
    {
    width: 100%;
    }
  }
+
+

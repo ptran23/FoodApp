@@ -126,3 +126,25 @@
     text-align: absolute;
 
   }
+
+  /* CSS QUERY*/
+  
+  @media only screen and (max-width: 800px) {
+    [class*="div"] 
+     {
+     width: 100%;
+     }
+     .wrapper{
+       display:grid;
+       grid-template-columns: 50% 50%;
+       grid-template-rows: 2;
+       grid-gap:0.1em;
+     }
+   }
+   /*Tablets to Desktop */
+@media only screen and (min-width: 801px) {
+  [class*="div"] 
+   {
+   width: 100%;
+   }
+ }
