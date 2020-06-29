@@ -40,6 +40,7 @@
     cursor: pointer;
     font-weight: bold;
     color: #1a1212;
+   
 }
 .login-form input[type="submit"]:hover {
 opacity: 0.8;

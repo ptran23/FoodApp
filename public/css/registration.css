@@ -1,14 +1,41 @@
 
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    font-family: sans-serif;
+    font-weight:700;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#555;
+    background:#ecf0f3;
+}
+
+
 .sign_up{
-    width: 350px;
-    margin: 0 auto;
-    font-family: Tahoma, Geneva, sans-serif;
-    border: 1px solid #b8b6b6;
+    width: 500px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius:60px;
+    background:#ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+            -13px -13px 20px #ffffff;
+    
+    
+    
+
+
+    
     }
 
 .sign_up h1{
-margin-left:5%;
-margin-right:5%;
+color:rgb(145, 17, 17);
+text-align: center;
 font-weight: normal;
 
 }
@@ -26,7 +53,7 @@ margin-right:5%;
 font-size: small;
 font-weight: lighter;
 }
-
+/* Text box for fields
 .sign_up input[type="password"],
     .sign_up input[type="text"] {
     width: 90%;
@@ -37,25 +64,30 @@ font-weight: lighter;
     margin-bottom: 15px;
     box-sizing:border-box;
     font-size: 14px;
-   
 }
-.sign_up label[for = "yourName"],
-.sign_up label[for = "email"],
-.sign_up label[for = "password"],
-.sign_up label[for = "password2"]{
-margin-left:5%;
-margin-right:5;
+*/
+
+.username,
+.email,
+.password,
+.password2{
+margin-left:auto;
+margin-right:auto;;
 font-size: 10px;
 font-weight: bold;
+
+margin-bottom:20px;
+border-radius: 25px;
+box-shadow: inset 8px 8px 8px #cbced1,
+            inset -8px 8px 8px #ffffff;
 }
 
-
+/*
 .sign_up input[type="submit"]{
     
     width: 82%;
 
     padding: 10px;
-    background-color: #647ff5;
     text-align: center;
     margin-left:10%;
      margin-right:20%;
@@ -63,17 +95,73 @@ font-weight: bold;
     cursor: pointer;
     font-weight: bold;
     color: #1a1212;
+    background: linear-gradient(var(--bg-angle), var(--bg-start), var(--bg-end));
+  ;
+ 
+ 
+}*/
+.sign_up input[type="submit"]
+{
+  outline:none;
+  border:none;
+  cursor:pointer;
+  width:100%;
+  height: 40px;
+  border-radius: 30px;
+  font-size:20px;
+  font-weight:600;
+  font-family: sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background:rgb(8, 241, 164);
+  box-shadow: 3px 3px 8px #b1b1b1,
+             -3px -3px 8px #ffffff;
 }
-
 .sign_up input[type="submit"]:hover {
     opacity: 0.8;
 }
 
 .logo
 {
-    width:150px;
-     height:150px;
-    display:block;
-     margin-left:auto; 
-     margin-right:auto;
+    background:url("/images/FoodShark_logo3.png");
+    background-size: cover;
+    width:120px;
+     height:120px;
+     display: block;
+     border-radius: 50%;
+     margin:0 auto;
+     box-shadow:
+                /* logo Shadow*/
+                0px 0px 2px #5f5f5f,
+                /* off set */
+                0px 0px  2px 5px #ecf0f3,
+                /*bottom right */
+                8px 10px 15px #a7aaaf,
+                /*top left */
+                -8px -8px 15px #ffffff;
+}
+
+.fields 
+{
+    width: 100%;
+    padding:0.5px 1px 1px 1px;
+}
+
+.fields input 
+{
+    border:none;
+    outline:none;
+    background:none;
+    font-size:18px;
+    color: #555;
+    padding: 8px 8px 20px 5px;
+}
+
+.fields svg
+{
+    height:20px;
+    position: relative;
+    margin: 0px 10px 10px;
+   left:16px;
+   top:13px;
 }
