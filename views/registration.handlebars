@@ -1,18 +1,9 @@
 
 <link href= "css/registration.css "  rel ="stylesheet">
-<nav>
-                <a href="/">
-                     <img class = "Logo" 
-                     src = "images/FoodShark_logo.png" 
-                     alt= "Amazon logo" 
-                     width="150" height="150"
-                     style = "display:block;
-                      margin-left:auto; 
-                      margin-right:auto;
-                      ">
-                </a>
-</nav>
 
+<div> <a href="/">
+<img class="logo"src="images/FoodShark_logo.png"> 
+</a> </div>
 
 <!--This will only show if the successMessage was injected into the view -->
 <div><center>{{successMessage}}  </center></div>
@@ -30,7 +21,6 @@
 <label for="yourName">Your Name</label>
 <input type="text" id="yourName" name="yourName"  value ="{{form.nameholder}}"> <br>
         
-
 <label for="email">Email</label>
 <input type="text" id="email" name="email" value="{{form.emailholder}}"> <br>
 

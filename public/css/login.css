@@ -53,8 +53,7 @@ color: #918e8e;
     text-align: center;
 
 }
-.new input[type="submit"]{
-    
+.new input[type="submit"]{ 
     width: 40%;
     padding: 10px;
     background-color: #d8d6d0;
@@ -64,5 +63,13 @@ color: #918e8e;
     cursor: pointer;
     font-weight: bold;
     color: #1a1212;
-    
+}
+
+.logo
+{
+    width:150px;
+     height:150px;
+    display:block;
+     margin-left:auto; 
+     margin-right:auto;
 }

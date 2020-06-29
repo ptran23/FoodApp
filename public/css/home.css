@@ -33,22 +33,7 @@
     color: black;
   } */
   
- /* home banner */
- .homebanner
- {
-   
-    background-image: url(/images/home/food3.jpg);
-
-    /* Set a specific height */
-  min-height: 800px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
- } 
+ 
  /*footer*/
  .footer {
   width: 100%;
@@ -168,7 +153,7 @@
 
  /* CSS QUERY */
  /*mobile */
- @media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 851px) {
  [class*="div"] 
   {
   width: 100%;
@@ -179,22 +164,38 @@
     grid-template-rows: 2;
     grid-gap:0.1em;
   }
-}
-/* Remvoes chef description / photo once it reaches phone size px */
-@media screen and (max-width: 800px) {
+
   div.chef {
     display: none;
   }
+
+  /* Parallax */
+.parallax {
+  /* The image used */
+  background-image: url("/images/home/food6.jpg");
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+}
+
+
+
 /*Tablets to Desktop */
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 851px) {
   [class*="div"] 
    {
    width: 100%;
    }
- }
 
-/* Parallax */
+   /* Parallax */
 .parallax {
   /* The image used */
   background-image: url("/images/home/food6.jpg");
@@ -208,3 +209,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+ }
+

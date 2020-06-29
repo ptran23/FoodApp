@@ -69,3 +69,11 @@ font-weight: bold;
     opacity: 0.8;
 }
 
+.logo
+{
+    width:150px;
+     height:150px;
+    display:block;
+     margin-left:auto; 
+     margin-right:auto;
+}
