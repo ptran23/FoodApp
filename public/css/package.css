@@ -4,27 +4,22 @@
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f3f2f2;
-    text-align: center;
-    padding: 14px 16px;
+
+  .banner_title {
+    float: right;
+    color: #f7f3f3;
+    text-align: right;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
   }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    .logo{
+      float: left;
+       width:80px ;
+       height:80px;
+      
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #3c9740;
-    color: white;
-  }
-  
+  /* WORK IN PROG
   .sidenav {
     width: 130px;
     height: 100%;
@@ -48,7 +43,7 @@
   .sidenav a:hover {
     text-underline-position: below;
   }
-  
+  */
   .main {
     margin-left: 140px; /* Same width as the sidebar + left position in px */
     font-size: 28px; /* Increased text to enable scrolling */

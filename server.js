@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Load Controllers
  const generalController = require ("./Controllers/generalC");
  const topSaleController = require ("./Controllers/TopSale");
-//creating global var to have any handlebar  access it
 
 // map controllers to app object
 app.use ("/",generalController);

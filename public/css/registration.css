@@ -12,13 +12,12 @@ margin-right:5%;
 font-weight: normal;
 
 }
+
 .sign_up h2{
 margin-left:5%;
 margin-right:5%;
 font-size: x-small;
 font-weight: lighter;
-
-
 }
 
 .sign_up h3{
@@ -27,8 +26,6 @@ margin-right:5%;
 font-size: small;
 font-weight: lighter;
 }
-
-
 
 .sign_up input[type="password"],
     .sign_up input[type="text"] {
@@ -66,9 +63,6 @@ font-weight: bold;
     cursor: pointer;
     font-weight: bold;
     color: #1a1212;
-
-    
-    
 }
 
 .sign_up input[type="submit"]:hover {

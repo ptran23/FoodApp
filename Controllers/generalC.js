@@ -1,5 +1,6 @@
 const express = require ('express')
 const router = express.Router ();
+
 // routing home
 router.get ("/", (req,res) => {
     res.render("home",
@@ -30,21 +31,15 @@ router.get ("/package", (req,res) => {
     {title:'package'});
 
 });
-
-
-
-//Handle the registration
+//Handle the post data
 router.post("/registration",(req,res)=>{
-
-    const errorMessages = [];
-
-
-    //fields value holder
-    const newUser = {
-        yourName:req.body.yourName,
-        email:req.body.email,
-        password:req.body.password
-    }
+const errorMessages = [];  
+//fields value holder
+var form= 
+{
+nameholder : req.body.yourName,
+emailholder : req.body.email
+};
 
     //validation for null ptr
     if(req.body.yourName=="")
@@ -77,7 +72,6 @@ router.post("/registration",(req,res)=>{
         errorMessages.push ("Password does not match.");
     }
 
-
     //If the user does not enter all the information
     if(errorMessages.length >0 )
     {
@@ -96,6 +90,18 @@ router.post("/registration",(req,res)=>{
                     title : "dashboard",
                     successMessage :`Confirmation number has been sent to the email`
             });
+
+            // sends email once completed
+            const sgMail = require('@sendgrid/mail');
+                sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
+                const msg = {
+                to: req.body.email,
+                from: 'test@example.com',
+                subject: 'Testing',
+                html: '<strong>One step closer</strong>',
+                };
+                sgMail.send(msg);
+                
     }
 
     router.get("/logout",(req,res)=>{

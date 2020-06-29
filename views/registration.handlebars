@@ -1,44 +1,51 @@
 
 <link href= "css/registration.css "  rel ="stylesheet">
-
-<!-- Will only show if the errors array exists-->
-{{#each errors}}
-
-    <div >{{this}}</div>
-{{/each}}
+<nav>
+                <a href="/">
+                     <img class = "Logo" 
+                     src = "images/FoodShark_logo.png" 
+                     alt= "Amazon logo" 
+                     width="150" height="150"
+                     style = "display:block;
+                      margin-left:auto; 
+                      margin-right:auto;
+                      ">
+                </a>
+</nav>
 
 
 <!--This will only show if the successMessage was injected into the view -->
 <div><center>{{successMessage}}  </center></div>
 
+
 <div class= "sign_up">
-    <h1> Create account</h1>
-    <form action="/registration" method="POST"  >
+<h1> Create account</h1>
+<form action="/registration" method="POST"  >
 
-        <label for="yourName">Your Name</label>
-        <input type="text" id="yourName" name="yourName"  value ="{{form.nameholder}}"> <br>
-        <!--<br>
-        <label name="name_val" id="name_val"></label> -->
+<!-- Will only show if the errors array exists-->
+{{#each errors}}
+<div >{{this}} </div>
+{{/each}}
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" value="{{form.emailholder}}"> <br>
-       <!-- <br>
-        <label name="email_val" id="email_val"></label> -->
+<label for="yourName">Your Name</label>
+<input type="text" id="yourName" name="yourName"  value ="{{form.nameholder}}"> <br>
+        
 
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder=" Must include uppercase,lowercase and a num"></textarea><br><br>
-        <!--<br>
-        <label name="pass_val" id="pass_val"></label> -->
+<label for="email">Email</label>
+<input type="text" id="email" name="email" value="{{form.emailholder}}"> <br>
 
-        <label for="password2">Re-enter password</label>
-        <input type="password" name="password2"></textarea><br><br>
-        <!--<br>
-        <label name="pass2_val" id="pass2_val"></label> -->
 
-        <input type="submit" value="Create Your FoodShark account">
+<label for="password">Password</label>
+<input type="password" name="password" placeholder=" Must include uppercase,lowercase and a num"></textarea><br><br>
 
-    </form>
-    <h2>By creating an account, you agree to FoodShark's <a href="/condition"> Condition of Use </a> and <a href="/privacy"> Privacy Notice </a>.</h2>
-    <h3>Already have an account? <a href="/login"> Sign-In </a></h3>
+<label for="password2">Re-enter password</label>
+<input type="password" name="password2"></textarea><br><br>
+
+<input type="submit" value="Create Your FoodShark account">
+
+</form>
+<h2>By creating an account, you agree to FoodShark's <a href="/condition"> Condition of Use </a> and <a href="/privacy"> Privacy Notice </a>.</h2>
+<h3>Already have an account? 
+<a href="/login"> Sign-In </a></h3>
 </div>
 
