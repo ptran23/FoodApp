@@ -1,12 +1,26 @@
 
 
 <link href= "css/dashboard.css "  rel ="stylesheet">
+
 <div class="topnav" id ="myNavBar">
-    <a href="/package">Meal Package</a>
-    <a href="/logout">Logout</a>
-</div>
-<div class ="dashboard">
-    <div class="home-text">
-        <p1><br><br><h1><Welcome>{{user.yourName}}</Welcome></h1> <br> 
+    <div> <a href="/">
+    <img class="logo"src="images/FoodShark_logo1.png"> </a> 
     </div>
+    <a class = "banner_title" href="/"><br>HOME</a>
+    <a class = "banner_title" href="/package"><br>MEAL PACKAGE</a>
+    <a class = "banner_title" href="/404"><br>ORDER</a>
+    <a class = "banner_title" href="/404"><br>CONTACT</a>
+    <a class = "banner_title" href="/login"><br>LOGOUT</a>
+    
+  
+</div>
+
+
+<div class ="dashboard">
+    <div class="home-text"> 
+        <p1><br><br><h1><Welcome>{{user.yourName}}</Welcome></h1> <br> 
+        <p1><br><br><h1><Welcome>{{form.nameholder}}</Welcome></h1> <br> 
+        <p1><br><br><h1><Welcome>{{nameholder}}</Welcome></h1> <br> 
+        <p1><br><br><h1><Welcome>{{nameholder}}</Welcome></h1> <br> 
+    </div> 
 </div>

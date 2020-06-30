@@ -1,11 +1,49 @@
-body{
-    background-color: rgb(255, 255, 255); 
-    }
-   
-       .dashboard {
-           width: 350px;
-               margin: 0 auto;
-               font-family: Tahoma, Geneva, sans-serif;
-               border: 10px solid #056d68;
-               text-align: center;
-       }
+
+@charset "UTF-8";
+body {
+    background-image: url("/images/dashboard/d2.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background-position: left;
+}
+.topnav {
+    position: fixed;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    display:flex;
+    padding: 0.5rem;
+    color:black;
+    background:rgba(0 ,0,0,0.2)
+  }
+  .logo
+  {
+    width:60px 
+    style = "display:block;" 
+  }
+
+ /* Style the links inside the navigation bar */
+ .banner_title {
+     display:block;
+     text-decoration: none;
+     color:#fff;
+     font-size: 15px;
+    font-family: 'Raleway',sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transition: all ease 0.5s;
+  }
+  .topnav a:hover
+  {
+      background-color: rgb(240, 56, 56);
+  }
+    .logo{
+      float: left;
+       width:80px ;
+       height:80px;
+      
+  }
+
