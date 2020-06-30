@@ -31,6 +31,13 @@ router.get ("/package", (req,res) => {
     {title:'package'});
 
 });
+// routing 404
+router.get ("/404", (req,res) => {
+    res.render("404",
+    {title:'Coming Soon'});
+
+});
+
 //Handle the post data
 router.post("/registration",(req,res)=>{
 const errorMessages = [];  

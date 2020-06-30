@@ -1,0 +1,38 @@
+<link href= "css/404.css "  rel ="stylesheet">
+
+  <div class="welcome-section content-hidden">
+            <div class="content-wrap">
+                <ul class="fly-in-text">
+                    <li>Coming</li>
+                    <li>Soon</li>
+                </ul>
+                
+                <a href="/" class="enter-button">Be Patient!!</a>
+            </div>
+        </div>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var welcomeSection = $('.welcome-section'),
+                    enterButton = welcomeSection.find('.enter-button');
+                
+                setTimeout(function() {
+                    welcomeSection.removeClass('content-hidden');
+                }, 500);
+                
+                enterButton.on('click', function(e) {
+                    e.preventDefault();
+                    welcomeSection.addClass('content-hidden').fadeOut();
+                });
+                
+                
+            })();
+
+            
+        </script>
